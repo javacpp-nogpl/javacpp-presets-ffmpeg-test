@@ -6,9 +6,15 @@
     <properties>
         <exec.mainClass>ReadFewFrame</exec.mainClass>
 
-        <!-- <javacpp.groupId>org.bytedeco</javacpp.groupId> -->
+        <javacpp.groupId>org.bytedeco</javacpp.groupId>
+        <javacpp.version>4.3.1-1.5.4</javacpp.version>
+        <javacpp.extension></javacpp.extension>
+
+        <!--
         <javacpp.groupId>com.github.javacpp-nogpl</javacpp.groupId>
         <javacpp.version>4.3.1-1.5.4-SNAPSHOT</javacpp.version>
+        <javacpp.extension>-nogpl</javacpp.extension>
+        -->
     </properties>
 
     <repositories>
@@ -30,7 +36,7 @@
             <groupId>${javacpp.groupId}</groupId>
             <artifactId>ffmpeg</artifactId>
             <version>${javacpp.version}</version>
-            <classifier>linux-x86_64-nogpl</classifier>
+            <classifier>linux-x86_64${javacpp.extension}</classifier>
         </dependency>
     </dependencies>
     <build>
