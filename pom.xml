@@ -5,17 +5,31 @@
     <version>1.5.4</version>
     <properties>
         <exec.mainClass>ReadFewFrame</exec.mainClass>
+
+        <!-- <javacpp.groupId>org.bytedeco</javacpp.groupId> -->
+        <javacpp.groupId>com.github.javacpp-nogpl</javacpp.groupId>
+        <javacpp.version>4.3.1-1.5.4-SNAPSHOT</javacpp.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>snapshots-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases><enabled>false</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
-            <groupId>org.bytedeco</groupId>
+            <groupId>${javacpp.groupId}</groupId>
             <artifactId>ffmpeg</artifactId>
-            <version>4.3.1-1.5.4</version>
+            <version>${javacpp.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.bytedeco</groupId>
+            <groupId>${javacpp.groupId}</groupId>
             <artifactId>ffmpeg</artifactId>
-            <version>4.3.1-1.5.4</version>
+            <version>${javacpp.version}</version>
             <classifier>linux-x86_64-nogpl</classifier>
         </dependency>
     </dependencies>
