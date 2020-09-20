@@ -4,6 +4,9 @@
     <artifactId>readfewframe</artifactId>
     <version>1.5.4</version>
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
         <exec.mainClass>ReadFewFrame</exec.mainClass>
 
         <!--
