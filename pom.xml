@@ -11,13 +11,14 @@
 
         <!--
         <javacpp.groupId>org.bytedeco</javacpp.groupId>
-        <javacpp.version>4.3.1-1.5.4</javacpp.version>
+        <javacpp.version>4.3.1-1.5.5-SNAPSHOT</javacpp.version>
         <javacpp.extension></javacpp.extension>
         -->
 
         <javacpp.groupId>com.github.javacpp-nogpl</javacpp.groupId>
-        <javacpp.version>4.3.1-1.5.4-SNAPSHOT</javacpp.version>
-        <javacpp.extension>-nogpl</javacpp.extension>
+        <javacpp.version>4.3.1-1.5.4</javacpp.version>
+        <javacpp.extension></javacpp.extension>
+
     </properties>
 
     <repositories>
